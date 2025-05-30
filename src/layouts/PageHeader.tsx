@@ -1,5 +1,6 @@
 import logo from "../assets/logo-webtube.png"
 import { Menu } from "lucide-react"
+import { Button } from "../components/Button"
 
 export function PageHeader() {
     return (
@@ -10,7 +11,9 @@ export function PageHeader() {
         flex gap-4 
         items-center
         flex-shrink-0">
-            <button><Menu /> </button>
+            <Button variant="ghost" size="icon">
+                <Menu /> 
+            </Button>
                 <a href="/">
                 <img src={logo} className="h-6"></img>
                 </a>
