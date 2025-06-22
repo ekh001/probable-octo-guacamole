@@ -1,4 +1,4 @@
-import logo from "../assets/logo-webtube.png"
+import logo from "../assets/logo-ustube.png"
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react"
 import { Button } from "../components/Button"
 import { useState } from "react"
@@ -15,7 +15,7 @@ export function PageHeader() {
                 <Menu /> 
             </Button>
                 <a href="/">
-                <img src={logo} className="h-6"></img>
+                <img src={logo} className="h-12"></img>
                 </a>
             
 
@@ -29,7 +29,7 @@ export function PageHeader() {
                 
                 <div className="flex flex-grow max-w-[600px]">
                     <input type="search" placeholder="Search"
-                    className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none" />
+                    className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-36 text-lg w-full focus:border-blue-500 outline-none" />
                     <Button onClick={() => setShowFullWidthSearch(true)} className="py-2 px-4 rounded-r-full border border-secondary-border border-l-0 flex-shrink-0">
                         <Search />
                     </Button>
